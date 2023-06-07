@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { colors } from "../../styles/colors"
 
 export const styles = StyleSheet.create({
@@ -11,5 +11,9 @@ export const styles = StyleSheet.create({
         color: colors.white,
         padding: 5,
         fontSize: 20
+    },
+    image: {
+        width: Dimensions.get("window").width,
+        height: Dimensions.get("window").width
     }
 })
